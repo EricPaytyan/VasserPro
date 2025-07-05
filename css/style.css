@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+a, p, ul, li, ol, li, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    font-family: "Montserrat";
+}
+
+img, a, h1, h2, h3, h4, h5, h6 {
+    transition: .3s ease-in-out;
+}
+
+.boldTxt {
+    font-weight: 600;
+}
+
+.mrgCrsl {
+    margin: 0 -50px;
+}
+
+.lh-n {
+    line-height: normal;
+}
+
+a {
+    color: #020202;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    box-sizing: border-box;
+    transition: .3s ease-in-out;
+}
+
+/* Header */
+
+header {
+    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+    box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.30);
+}
+
+header .brandNameWrp {
+    display: flex;
+    justify-content: center;margin-bottom: 0.5rem;
+}
+
+header .brandNameWrp .brandName, footer .brandNameWrp .brandName {
+    background: linear-gradient(#000000 30%, #ff0000 65%, #ffc800 25%);
+    font-weight: 700;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 2.39rem;
+    font-family: "Montserrat";
+}
+
+header .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .menu .menuList {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-left: 0;
+    margin-bottom: 0.8rem;
+}
+
+header .menu .menuList li a:hover, footer .menu .menuList li a:hover { 
+    opacity: 0.6;
+    color: #303030
+}
+
+header .phoneNum, footer .phoneNum {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+header .phoneNum .contactNum, footer .phoneNum .contactNum {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+header .phoneNum .contactNum:hover, footer .phoneNum .contactNum:hover {
+    opacity: 0.6;
+}
+
+/* Main */
+
+/* Intro Block */
+.carousel-indicators{
+    display: none;
+}
+
+
+main .introBlock {
+    margin-bottom: 2.4rem;
+}
+
+/* Porducts Block */
+
+main .productsBlock {
+    margin-bottom: 3rem;
+}
+
+main .productsBlock .mainTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+main .productsBlock .productCard {
+    width: 250px;
+    margin: 0 auto 2.5rem auto;
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+main .productsBlock .productCard .productCardImg {
+    margin-bottom: 0.8rem;
+}
+
+main .productsBlock .productCard .productCardImg img {
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 2 / 2;
+    width: 100%;
+    border-radius: 1.8rem;
+    background: lightgray -4.627px -436.917px / 103.416% 311.272% no-repeat;
+    box-shadow: 0px 0px 20px 0px #56565680;
+}
+
+main .productsBlock .productCard .productCardImg img:hover {
+    opacity: 0.7;    
+}
+
+main .productsBlock .productCard .productCardInfo a h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+main .productsBlock .productCard .productCardInfo a h2::after, main .productInfoBlock .prevPage p::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
+
+main .productsBlock .productCard .productCardInfo a h2:hover:after, main .productInfoBlock .prevPage p:hover::after {
+    width: 100%;
+}
+
+main .productsBlock .productCard .productCardInfo a:hover {
+    opacity: 0.6;
+    color: #303030;
+}
+
+main .productsBlock .productCard .productCardPrice p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: grey;
+}
+
+/* Product Info Block */
+main .productInfoBlock {
+    margin: 5rem 0;
+}
+
+main .carouselWrp {
+    margin: 0 auto 3rem auto;
+}
+
+
+main .productInfoBlock .slider {
+    height: 100%;
+    width: calc(100% - 7rem);
+    margin: 0 auto;
+}
+
+main .productInfoBlock .slider .sliderImg img{
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 2 / 2;
+}
+
+
+main .productInfoBlock .slider .carousel-control-next .carousel-control-next-icon, main .productInfoBlock .slider .carousel-control-prev .carousel-control-prev-icon { 
+    background-color: black;
+    border-radius: 0.5rem;
+}
+
+main .productInfoBlock .productWrp {
+    margin: 0 1.5rem;
+}
+
+main .productInfoBlock .productFullName {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+main .productInfoBlock .productDesc {
+    font-size: 0.8rem;
+}
+
+main .productInfoBlock .productInfo {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+main .productInfoBlock .productPrice {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+main .productInfoBlock .productOrder {
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+    background-color: #000;
+    transition: .3s ease-in-out;
+    font-weight: 500;
+}
+
+main .productInfoBlock .productOrder:hover {
+    opacity: 0.5;
+    border-radius: 2rem;
+}
+
+main .productInfoBlock .prevPage  {
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 3rem;
+}
+
+
+main .productInfoBlock .prevPage .arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: .5s ease-in-out;
+}
+
+main .productInfoBlock .prevPage .arrow .arrowBlack {
+    display: none;
+}
+
+main .productInfoBlock .prevPage .arrow:hover .arrowBlack {
+    display: block;
+}
+
+main .productInfoBlock .prevPage .arrow .arrowWhite {
+    display: block;
+}
+
+
+main .productInfoBlock .prevPage .arrow:hover .arrowWhite {
+    display: none;
+}
+
+main .productInfoBlock .prevPage .arrow:hover {
+    background-color: white;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+
+/* footer */
+ 
+ 
+footer .menu {
+    display: none;
+}
+
+footer {
+    box-shadow: 0px 0px 40px 0px rgba(86, 86, 86, 0.30);
+    padding: 2rem 0;
+}
+
+footer .menu .menuList {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-left: 0;
+}
+
+footer .menu .menuList li { 
+    margin-bottom: 1rem;
+}
+
+
+/* Media */
+
+@media (min-width: 430px) {
+    header .brandNameWrp .brandName {
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 500px) {
+    main .productInfoBlock .slider {
+        width: calc(100% - 12rem);
+    }
+}
+
+
+@media (min-width: 600px) {  
+    main .productsBlock .productCard {
+        width: 350px;
+    }
+   
+}
+
+@media (min-width: 768px) {
+    main .productsBlock .productCard {
+        width: 100%;
+    }
+    
+    header .brandNameWrp .brandName {
+        font-size: 1.9rem;
+    }
+    header .menu .menuList {
+        margin-bottom: 0;
+    }
+
+    header .phoneNum, footer .phoneNum {
+        justify-content: flex-end;
+    }
+    header .brandNameWrp {
+        margin-bottom: 0;
+    }
+
+
+    main .productInfoBlock .slider .carousel-control-next { 
+        left: auto;
+    }
+
+
+    main .productInfoBlock .productWrp {
+        margin: 0;
+    }
+    
+    
+    main .productInfoBlock .slider {
+        width: calc(100% - 23rem);
+    }
+
+    main .productInfoBlock .productFullName {
+        font-size: 1.5rem;
+    }
+
+    main .productInfoBlock .productDesc {
+        font-size: 1rem;
+    }
+
+    footer .brandNameWrp {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+    }
+     
+    footer .brandNameWrp .brandName {
+        font-size: 1.9rem;
+    }
+
+    footer .menu {
+        display: block;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .mrgCrsl {
+        margin: 0 -37px;
+    }
+    main .productsBlock .productCard .productCardInfo a h2 {
+        font-size: 1.4rem;
+    }
+    
+    main .productInfoBlock .slider {
+        width: calc(100% - 5rem);
+    }
+    header .brandNameWrp .brandName {
+        font-size: 2.4rem;
+        
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: 10%;
+    }
+
+
+
+    main .carouselWrp {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+    /* header */
+    header .brandNameWrp {
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+    header .menu .menuList {
+        margin-bottom: 0;
+        font-size: 1.1rem;
+    }
+    header .phoneNum .contactNum, footer .phoneNum .contactNum {
+        font-size: 1.4rem;
+    }
+    
+    header .brandNameWrp .brandName {
+        font-size: 3rem;
+    }
+    header .phoneNum, footer .phoneNum {
+        justify-content: flex-end;
+    }
+
+
+   
+    /* main */
+    main .introBlock {
+        margin-bottom: 4rem;
+    }
+    main .productInfoBlock .slider {
+        width: calc(100% - 14rem);
+    }
+    .carousel-indicators{
+        display: block;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 11%;
+    }
+
+    main .productsBlock .mainTitle {
+        font-size: 1.7rem;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    main .productInfoBlock .slider {
+        width: calc(100% - 23rem);
+    }
+}

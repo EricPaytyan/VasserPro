@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название товара</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Как переносить свойства из обычных стилей в "медиа" 
+        1. Копируем цсс-правило из обычных стилей и вставляем тут же рядом
+        2. У ВЕРХНЕГО меняем все стили на телефоные
+        3. У НИЖНЕГО убираем все свойства которые НЕ меняются, и добавлям НУЖНЫЕ свойства
+        4. Переносим НИЖНЕЕ правило в следующее медиа
+        5. Проверяем, подходит ли оно туда. Если результат не устраивает, то вощвращаемся на пункт 4.
+
+        1. Рисуем сетку в графическом редакторе +
+        2. Создаём все крупные блоки сетки (колонки типа .col-12 без контента) 
+        3. Заполняем колонки тестовым контентом, придумыаем названия секциям (классы), выделяем общие стили
+        4. Заполнем реальным контентом, дополняем общие стили
+        5. Выделяем специальные стили каждой секции
+     -->
+     
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="brandNameWrp">
+                        <p class="brandName">VASSER PRO</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <nav class="menu">
+                        <ul class="menuList">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#product">Товар</a></li>
+                             
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="phoneNum">
+                        <a href="tel:+79254466550" class="contactNum">+7 925 446-65-50</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="product" class="productInfoBlock">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <a class="prevPage" href="index.html">
+                            <div class="arrow">
+                                <img src="img/arrow_white.png" class="arrowWhite img-fluid" alt="">
+                                <img src="img/arrow_black.png" class="arrowBlack img-fluid" alt="">
+                            </div>
+                            <p>Назад</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="carouselWrp">
+                            <div id="carouselExampleAutoplaying" class="carousel slide slider" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active sliderImg">
+                                        <img src="img/product13/product13.1.jpg" class="d-block img-fluid">
+                                    </div>
+                                    <div class="carousel-item active sliderImg">
+                                        <img src="img/product13/frame.png" class="d-block img-fluid">
+                                    </div>
+                                    <div class="carousel-item active sliderImg">
+                                        <img src="img/product13/product13.1.jpg" class="d-block img-fluid">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev mrgCrsl" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next mrgCrsl" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="productWrp">
+                            <h2 class="productFullName">Набор электроинструментов DeWALT 4в1</h2>
+                            <div class="productInfo">
+                                <p class="productDesc lh-n"><span class="boldTxt">Комплект:</span> Шуруповерт, Гайковёрт, Перфоратор, болгарка (ушм) / аккумляторный</p>
+                                <p class="productDesc"><span class="boldTxt">Артикул:</span> 1389741982</p>
+                                <p class="productDesc"><span class="boldTxt">Страна производтсва:</span> Китай</p>
+                                <p class="productDesc"><span class="boldTxt">Тип продукта:</span> Набор электроинструмента</p>
+                            </div>
+                            <div >
+                            <p class="productPrice boldTxt">13 000₽</p>
+                            </div>
+                            <a class="productOrder" href="tel:+79254466550">Заказать по звонку</a>
+                        </div>
+                    </div>
+                    
+                    
+                        
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <nav class="menu">
+                        <ul class="menuList">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#product">Товар</a></li>
+                             
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="brandNameWrp">
+                        <p class="brandName">VASSER PRO</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="phoneNum">
+                        <a href="tel:+79254466550" class="contactNum">+7 925 446-65-50</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js">
+        
+    </script>
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
